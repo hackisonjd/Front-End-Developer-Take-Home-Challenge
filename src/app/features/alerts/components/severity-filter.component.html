@@ -1,0 +1,10 @@
+<label for="severity-select">Filter by Severity</label>
+<rux-select
+  id="severity-select"
+  [value]="value()"
+  (rux-change)="onChange($event)">
+  <rux-option label="ALL">All</rux-option>
+  <rux-option label="caution">Caution</rux-option>
+  <rux-option label="serious">Serious</rux-option>
+  <rux-option label="critical">Critical</rux-option>
+</rux-select>

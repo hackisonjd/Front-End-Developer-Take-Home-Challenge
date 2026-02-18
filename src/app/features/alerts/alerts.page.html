@@ -1,0 +1,8 @@
+<section>
+  <h1>Active Alerts</h1>
+
+  <app-severity-filter
+  [value]="store.severityFilter()"
+  (valueChange)="store.setSeverity($event)">
+  </app-severity-filter>
+</section>
