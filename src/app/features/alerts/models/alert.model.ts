@@ -24,4 +24,5 @@ export interface Alert {
   errorMessage: string;
   errorSeverity: AlertSeverity;
   errorTime: number;
+  acknowledged: boolean;
 }
