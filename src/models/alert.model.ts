@@ -1,4 +1,8 @@
+// Enum for Severity of alerts, since they can only be specific values
+export type AlertSeverity = 'caution' | 'serious' | 'critical'
+
 export interface Contact {
+  id: string;
   contactName: number;
   contactBeginTimestamp: number;
   contactEndTimestamp: number;
@@ -10,6 +14,6 @@ export interface Contact {
 export interface Alert {
   errorId: string;
   errorMessage: string;
-  errorSeverity: string;
+  errorSeverity: AlertSeverity;
   errorTime: number;
 }
